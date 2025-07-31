@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌟 Smart Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d1d2d65b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Smart Todo List</h1>
+
+    <div class="input-section">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button id="add-task"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div class="footer">
+      <span id="task-counter">0 tasks left</span>
+      <button id="clear-all">Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
